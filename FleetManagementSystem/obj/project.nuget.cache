@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "2teyAnH/iFqOWWCn//czdEEA3rlndEuHU7DACnSdeudNem9SamF1uLsYxjk6f/j6eOhknCIgliHATArDx2+4AQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\qures\\source\\repos\\FleetManagementSystem\\FleetManagementSystem\\FleetManagementSystem.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\qures\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\qures\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\qures\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\qures\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\qures\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\qures\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
