@@ -8,5 +8,14 @@ namespace Model
 {
     public class Payment
     {
+        public Guid PaymentId { get; set; }
+        public Guid BookingId { get; set; }
+        public int PaymentDue { get; set; }
+
+        public DateTime PaymentDate { get; set; }
+
+        public string? PaymentMethod { get; set; }
+
+        // Add Relationships 
     }
 }
