@@ -8,17 +8,17 @@ namespace Model
 {
     public class Booking
     {
-        Guid BookingId { get; set; }
-        Guid CustomerId { get; set; }
-        Guid VehicleId { get; set; }
+        public Guid BookingId { get; set; }
+        public Guid CustomerId { get; set; }
+        public Guid VehicleId { get; set; }
 
-        DateTime BookingDate { get; set; }
-        string? Driver { get; set; }
+        public DateTime BookingDate { get; set; }
+        public string? Driver { get; set; }
 
-        DateTime StartDate { get; set; }
-        DateTime EndDate { get; set; }
+        public DateTime StartDate { get; set; }
+        public DateTime EndDate { get; set; }
 
-        int BookingFee { get; set; }
+        public int BookingFee { get; set; }
 
         // Add Objects for Creating Relationships
     }
