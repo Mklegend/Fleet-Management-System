@@ -1,0 +1,7 @@
+C:\Users\qures\source\repos\FleetManagementSystem\FleetManagementSystem\obj\Debug\net6.0\FleetManagementSystem.csproj.AssemblyReference.cache
+C:\Users\qures\source\repos\FleetManagementSystem\FleetManagementSystem\obj\Debug\net6.0\FleetManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\qures\source\repos\FleetManagementSystem\FleetManagementSystem\obj\Debug\net6.0\FleetManagementSystem.AssemblyInfoInputs.cache
+C:\Users\qures\source\repos\FleetManagementSystem\FleetManagementSystem\obj\Debug\net6.0\FleetManagementSystem.AssemblyInfo.cs
+C:\Users\qures\source\repos\FleetManagementSystem\FleetManagementSystem\obj\Debug\net6.0\FleetManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\qures\source\repos\FleetManagementSystem\FleetManagementSystem\obj\Debug\net6.0\FleetManagementSystem.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\qures\source\repos\FleetManagementSystem\FleetManagementSystem\obj\Debug\net6.0\FleetManagementSystem.MvcApplicationPartsAssemblyInfo.cache

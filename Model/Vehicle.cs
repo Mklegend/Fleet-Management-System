@@ -18,5 +18,13 @@ namespace Model
         public int Mileage { get; set; }
 
         // Add Relationships !
+        // One Vehicle can have many Bookings
+        public List<Booking>? Bookings { get; set; }
+        // One Vehicle can have many Bookings
+        public List<Maintenance>? Maintenances {get; set;}
+        // A Vehicle can be Associated with only One Staff Member
+        // at a time
+        public Staff? Chauffeur {get;set;}
+
     }
 }

@@ -19,5 +19,7 @@ namespace Model
         public bool? Availablity { get; set; }
 
         // Add Relationships !
+        // A Chauffeur can be assigned One Vehicle at a time
+        public Vehicle? Vehicle {get;set;}
     }
 }
