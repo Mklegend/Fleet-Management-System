@@ -25,7 +25,7 @@ namespace Model
         public Customer? Customer { get; set; }
         // A Booking can be associated with One Vehicle Only
         public Vehicle? Vehicle {get; set;}
-        // A Booking can be associated with One Vehicle Only
+        // A Booking can be associated with One Payment Only
         public Payment? Payment {get; set;}
 
     }

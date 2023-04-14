@@ -18,13 +18,15 @@ namespace Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Adding Primary Keys for the Tables !
-            modelBuilder.Entity<Booking>(b =>b.HasKey(b => b.BookingId));
-            modelBuilder.Entity<Customer>(c =>c.HasKey(c => c.CustomerId));
-            modelBuilder.Entity<Inventory>(i => i.HasKey(i=>i.PartId));
+            modelBuilder.Entity<Booking>(b => b.HasKey(b => b.BookingId));
+            modelBuilder.Entity<Customer>(c => c.HasKey(c => c.CustomerId));
+            modelBuilder.Entity<Inventory>(i => i.HasKey(i => i.PartId));
             modelBuilder.Entity<Maintenance>(m => m.HasKey(m => m.MaintenanceId));
-            modelBuilder.Entity<Payment>(p => p.HasKey(p=>p.PaymentId));
-            modelBuilder.Entity<Staff>(s=>s.HasKey(s=>s.ChauffeurId));
-            modelBuilder.Entity<Vehicle>(v=>v.HasKey(v=>v.VehicleId));
+            modelBuilder.Entity<Payment>(p => p.HasKey(p => p.PaymentId));
+            modelBuilder.Entity<Staff>(s => { s.HasKey(s => s.ChauffeurId); });
+            modelBuilder.Entity<Vehicle>(v => { v.HasKey(v => v.VehicleId);
+                v.HasOne<Staff>(v => v.Chauffeur).WithOne(s => s.Vehicle).HasForeignKey<Staff>(s => s.AssignedCarId);
+            });
 
         }
 
