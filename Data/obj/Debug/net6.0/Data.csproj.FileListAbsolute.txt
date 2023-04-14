@@ -1,0 +1,17 @@
+C:\Users\qures\source\repos\FleetManagementSystem\Data\bin\Debug\net6.0\Data.deps.json
+C:\Users\qures\source\repos\FleetManagementSystem\Data\bin\Debug\net6.0\Data.runtimeconfig.json
+C:\Users\qures\source\repos\FleetManagementSystem\Data\bin\Debug\net6.0\Data.dll
+C:\Users\qures\source\repos\FleetManagementSystem\Data\bin\Debug\net6.0\Data.pdb
+C:\Users\qures\source\repos\FleetManagementSystem\Data\bin\Debug\net6.0\Model.dll
+C:\Users\qures\source\repos\FleetManagementSystem\Data\bin\Debug\net6.0\Model.pdb
+C:\Users\qures\source\repos\FleetManagementSystem\Data\obj\Debug\net6.0\Data.csproj.AssemblyReference.cache
+C:\Users\qures\source\repos\FleetManagementSystem\Data\obj\Debug\net6.0\Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\qures\source\repos\FleetManagementSystem\Data\obj\Debug\net6.0\Data.AssemblyInfoInputs.cache
+C:\Users\qures\source\repos\FleetManagementSystem\Data\obj\Debug\net6.0\Data.AssemblyInfo.cs
+C:\Users\qures\source\repos\FleetManagementSystem\Data\obj\Debug\net6.0\Data.csproj.CoreCompileInputs.cache
+C:\Users\qures\source\repos\FleetManagementSystem\Data\obj\Debug\net6.0\Data.csproj.CopyComplete
+C:\Users\qures\source\repos\FleetManagementSystem\Data\obj\Debug\net6.0\Data.dll
+C:\Users\qures\source\repos\FleetManagementSystem\Data\obj\Debug\net6.0\refint\Data.dll
+C:\Users\qures\source\repos\FleetManagementSystem\Data\obj\Debug\net6.0\Data.pdb
+C:\Users\qures\source\repos\FleetManagementSystem\Data\obj\Debug\net6.0\Data.genruntimeconfig.cache
+C:\Users\qures\source\repos\FleetManagementSystem\Data\obj\Debug\net6.0\ref\Data.dll

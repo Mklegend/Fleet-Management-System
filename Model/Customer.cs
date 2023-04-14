@@ -17,5 +17,7 @@ namespace Model
         public string? LicenseNumber { get; set; }  
 
         // Add relationships here !
+        // One Customer can have many Bookings
+        public List<Booking>? Bookings { get; set; }
     }
 }

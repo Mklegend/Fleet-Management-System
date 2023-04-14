@@ -17,5 +17,7 @@ namespace Model
         public string? PaymentMethod { get; set; }
 
         // Add Relationships 
+        // A Payment can be associated with only one Booking
+        public Booking? Booking {get;set;}
     }
 }

@@ -21,5 +21,12 @@ namespace Model
         public int BookingFee { get; set; }
 
         // Add Objects for Creating Relationships
+        // A Booking can be associated with One Customer Only
+        public Customer? Customer { get; set; }
+        // A Booking can be associated with One Vehicle Only
+        public Vehicle? Vehicle {get; set;}
+        // A Booking can be associated with One Payment Only
+        public Payment? Payment {get; set;}
+
     }
 }

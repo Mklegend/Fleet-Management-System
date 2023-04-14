@@ -17,6 +17,8 @@ namespace Model
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
 
-        // Add Relationships 
+        // Add Relationships
+        // A Maintenance can be assocaited with only One Vehicle
+        public Vehicle? Vehicle {get;set;}
     }
 }
