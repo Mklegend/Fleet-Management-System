@@ -9,8 +9,8 @@ namespace Business.Interface
 {
     public interface IStaffManager
     {
-        public List<IStaffManager> GetStaffList();
-        public bool UpdateStaff(IStaffManager staff);
+        public List<Staff> GetStaffList();
+        public bool UpdateStaff(Staff staff);
 
         public bool DeleteStaff(Guid id);
     }

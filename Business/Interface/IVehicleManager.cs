@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,8 @@ namespace Business.Interface
 {
     internal interface IVehicleManager
     {
+        public List<Vehicle> GetVehicles();
+        public bool UpdateVehicle(Vehicle vehicle);
+        public bool DeleteVehicle(Guid id);
     }
 }
