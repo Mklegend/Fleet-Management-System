@@ -47,6 +47,8 @@ namespace Business.Implementation
             if (PaymentExists)
             {
                 dbContext.Payment.Remove(new Payment { PaymentId = id });
+                dbContext.SaveChanges();
+
                 return true;
             }
             return false;
