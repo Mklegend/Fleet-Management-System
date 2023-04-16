@@ -9,8 +9,8 @@ namespace Business.Interface
 {
     public interface IPaymentManager
     {
-        public List<IPaymentManager> GetPayments();
-        public bool UpdatePayment(IPaymentManager payment);
+        public List<Payment> GetPayments();
+        public bool UpdatePayment(Payment payment);
 
         // Add method for refund payment ! (Discuss)
         public bool DeletePayment(Guid id);

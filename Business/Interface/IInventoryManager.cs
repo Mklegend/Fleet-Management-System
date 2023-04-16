@@ -9,8 +9,8 @@ namespace Business.Interface
 {
     public interface IInventoryManager
     {
-        public List<IInventoryManager> GetInventories();
-        public bool UpdateInventory(IInventoryManager inventory);
+        public List<Inventory> GetInventories();
+        public bool UpdateInventory(Inventory inventory);
         public bool DeleteInventory(Guid id);
     }
 }
