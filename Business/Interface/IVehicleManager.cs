@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Business.Interface
 {
-    internal interface IVehicleManager
+    public interface IVehicleManager
     {
         public List<Vehicle> GetVehicles();
         public bool UpdateVehicle(Vehicle vehicle);
