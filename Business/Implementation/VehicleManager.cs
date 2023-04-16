@@ -47,6 +47,8 @@ namespace Business.Implementation
             if (VehicleExists)
             {
                 dbContext.Vehicle.Remove(new Vehicle { VehicleId = id });
+                dbContext.SaveChanges();
+
                 return true;
             }
             return false;

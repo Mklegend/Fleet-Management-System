@@ -47,6 +47,8 @@ namespace Business.Implementation
             if (StaffExists)
             {
                 dbContext.Staff.Remove(new Staff { ChauffeurId = id });
+                dbContext.SaveChanges();
+
                 return true;
             }
             return false;

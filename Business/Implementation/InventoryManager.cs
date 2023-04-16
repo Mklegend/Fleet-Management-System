@@ -47,6 +47,8 @@ namespace Business.Implementation
             if (InventoryExists)
             {
                 dbContext.Inventory.Remove(new Inventory { PartId = id });
+                dbContext.SaveChanges();
+
                 return true;
             }
             return false;

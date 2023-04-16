@@ -47,6 +47,7 @@ namespace Business.Implementation
             if (CustomerExists)
             {
                 dbContext.Customer.Remove(new Customer { CustomerId = id });
+                dbContext.SaveChanges();
                 return true;
             }
             return false;

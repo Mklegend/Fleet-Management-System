@@ -47,6 +47,8 @@ namespace Business.Implementation
             if (MaintenanceExists)
             {
                 dbContext.Maintenance.Remove(new Maintenance { MaintenanceId = id });
+                dbContext.SaveChanges();
+
                 return true;
             }
             return false;

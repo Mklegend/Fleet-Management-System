@@ -41,6 +41,8 @@ namespace Business.Implementation
              bool BookingExists = dbContext.Booking.Any(b => b.BookingId == id);
             if (BookingExists) {
                 dbContext.Booking.Remove(new Booking { BookingId = id });
+                dbContext.SaveChanges();
+
                 return true;
             }
             return false;
