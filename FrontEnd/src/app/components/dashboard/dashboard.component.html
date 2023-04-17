@@ -6,37 +6,37 @@
               [(nzCollapsed)]="isCollapsed"
               [nzTrigger]="null">
       <div class="sidebar-logo">
-        <a href="https://ng.ant.design/" target="_blank">
+        <a routerLink="admin">
           <!-- <img src="../../../assets/fm-logo.png" alt="logo"> -->
           <span nz-icon nzType="dashboard" style="font-size: 16px; margin-right: 5px;" nzTheme="outline"></span>
-          <h1>Dashboard</h1>
+          <h1 class="menu-item-link">Dashboard</h1>
         </a>
       </div>
-      <ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
+      <ul style="background-color: white;" nz-menu nzTheme="light" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
           <ul>
             <li nz-menu-item nzMatchRouter>
-                <span nz-icon style="font-size: 16px; margin-right: 5px;" nzType="user" nzTheme="outline"></span>
-                <a *ngIf="!isCollapsed" routerLink="customer">Customer</a>
+                <span nz-icon style="font-size: 16px; margin-right: 5px; color: gray;" nzType="user" nzTheme="outline"></span>
+                <a class="menu-item-link" *ngIf="!isCollapsed" routerLink="customer">Customer</a>
             </li>
             <li nz-menu-item nzMatchRouter>
-                <span nz-icon nzType="reconciliation" style="font-size: 16px; margin-right: 5px;" nzTheme="outline"></span>
-                <a *ngIf="!isCollapsed" routerLink="reservation">Reservation</a>
+                <span nz-icon nzType="reconciliation" style="font-size: 16px; margin-right: 5px; color: gray;" nzTheme="outline"></span>
+                <a class="menu-item-link" *ngIf="!isCollapsed" routerLink="reservation">Reservation</a>
             </li>
             <li nz-menu-item nzMatchRouter>
-                <span nz-icon nzType="dollar-circle" style="font-size: 16px; margin-right: 5px;" nzTheme="outline"></span>
-                <a *ngIf="!isCollapsed" routerLink="payment">Payment</a>
+                <span nz-icon nzType="dollar-circle" style="font-size: 16px; margin-right: 5px; color: gray;" nzTheme="outline"></span>
+                <a class="menu-item-link" *ngIf="!isCollapsed" routerLink="payment">Payment</a>
             </li>
             <li nz-menu-item nzMatchRouter>
-                <span nz-icon nzType="tool" style="font-size: 16px; margin-right: 5px;" nzTheme="outline"></span>
-                <a *ngIf="!isCollapsed" routerLink="maintenance">Maintenance</a>
+                <span nz-icon nzType="tool" style="font-size: 16px; margin-right: 5px; color: gray;" nzTheme="outline"></span>
+                <a class="menu-item-link" *ngIf="!isCollapsed" routerLink="maintenance">Maintenance</a>
             </li>
             <li nz-menu-item nzMatchRouter>
-                <span nz-icon nzType="shop" style="font-size: 16px; margin-right: 5px;" nzTheme="outline"></span>
-                <a *ngIf="!isCollapsed" routerLink="inventory">Inventory</a>
+                <span nz-icon nzType="shop" style="font-size: 16px; margin-right: 5px; color: gray;" nzTheme="outline"></span>
+                <a class="menu-item-link" *ngIf="!isCollapsed" routerLink="inventory">Inventory</a>
             </li>
             <li nz-menu-item nzMatchRouter>
-                <span nz-icon nzType="car" style="font-size: 16px; margin-right: 5px;" nzTheme="outline"></span>
-                <a *ngIf="!isCollapsed" routerLink="vehicle">Vehicle</a>
+                <span nz-icon nzType="car" style="font-size: 16px; margin-right: 5px; color: gray;" nzTheme="outline"></span>
+                <a class="menu-item-link" *ngIf="!isCollapsed" routerLink="vehicle">Vehicle</a>
             </li>
           </ul>
       </ul>

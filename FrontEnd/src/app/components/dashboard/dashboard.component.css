@@ -34,7 +34,7 @@
     padding-left: 24px;
     overflow: hidden;
     line-height: 64px;
-    background: #001529;
+    background: #ffffff;
     transition: all .3s;
   }
   
@@ -45,6 +45,10 @@
     vertical-align: middle;
   }
   
+  .menu-item-link{
+    color: gray !important;
+  }
+
   .sidebar-logo h1 {
     display: inline-block;
     margin: 0 0 0 20px;
@@ -61,6 +65,9 @@
     z-index: 2;
   }
   
+  nz-sider{
+    background-color: white;
+  }
   .app-header {
     position: relative;
     height: 64px;
@@ -69,13 +76,14 @@
     box-shadow: 0 1px 4px rgba(0,21,41,.08);
   }
   
-  nz-content {
+  /* nz-content {
     margin: 24px;
-  }
+  } */
   
   .inner-content {
     padding: 24px;
     background: #fff;
-    height: 100%;
+    min-height: 100vh;
+    max-height: 100%;
   }
   
