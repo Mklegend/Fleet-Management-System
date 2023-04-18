@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { CustomerComponent } from './components/customer/customer.component';
-import { ReservationComponent } from './components/reservation/reservation.component';
-import { PaymentComponent } from './components/payment/payment.component';
-import { MaintenanceComponent } from './components/maintenance/maintenance.component';
-import { InventoryComponent } from './components/inventory/inventory.component';
-import { VehicleComponent } from './components/vehicle/vehicle.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { CustomerComponent } from './pages/customer/customer.component';
+import { InventoryComponent } from './pages/inventory/inventory.component';
+import { MaintenanceComponent } from './pages/maintenance/maintenance.component';
+import { PaymentComponent } from './pages/payment/payment.component';
+import { ReservationComponent } from './pages/reservation/reservation.component';
+import { VehicleComponent } from './pages/vehicle/vehicle.component';
 
 const routes: Routes = [
   {

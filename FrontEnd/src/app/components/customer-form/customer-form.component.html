@@ -1,0 +1,58 @@
+<form nz-form [formGroup]="form" (ngSubmit)="submitForm()">
+  <nz-form-item>
+    <nz-form-control nzErrorTip="Customer Name is Empty !">
+      <nz-input-group nzPrefixIcon="user">
+        <input
+          type="text"
+          nz-input
+          formControlName="customerName"
+          placeholder="Customer Name"
+        />
+      </nz-input-group>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-control nzErrorTip="Phone Number is Not Provided !">
+      <nz-input-group nzPrefixIcon="phone">
+        <input
+          type="text"
+          nz-input
+          formControlName="phoneNumber"
+          placeholder="Phone Number"
+        />
+      </nz-input-group>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-control nzErrorTip="Address is not Provided !">
+      <nz-input-group nzPrefixIcon="home">
+        <input
+          type="text"
+          nz-input
+          formControlName="address"
+          placeholder="Address"
+        />
+      </nz-input-group>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-control nzErrorTip="CNIC is not Provided !">
+      <nz-input-group nzPrefixIcon="lock">
+        <input type="text" nz-input formControlName="cnic" placeholder="CNIC" />
+      </nz-input-group>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-control nzErrorTip="License is not Provided !">
+      <nz-input-group nzPrefixIcon="audit">
+        <input
+          type="text"
+          nz-input
+          formControlName="licenseNumber"
+          placeholder="License Number"
+        />
+      </nz-input-group>
+    </nz-form-control>
+  </nz-form-item>
+  <button nz-button class="login-form-button login-form-margin" [nzType]="'primary'">Save</button>
+</form>
