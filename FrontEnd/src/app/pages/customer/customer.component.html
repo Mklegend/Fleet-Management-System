@@ -1,0 +1,44 @@
+<h1>Customers</h1>
+<div id="section-1">
+  <ng-template #suffixIconSearch>
+    <span style="margin: 10px;" nz-icon nzType="search"></span>
+  </ng-template>
+  <nz-input-group [nzPrefix]="suffixIconSearch" style="width: 50%">
+    <input
+      type="text"
+      [formControl]="search"
+      nz-input
+      placeholder="Search for Customers"
+      nzSize="large"
+    />
+  </nz-input-group>
+  <button (click)="addCustomer()" nzSize="large" style="border-radius: 10px" nz-button nzType="primary">
+    Add Customer
+  </button>
+</div>
+<nz-table #basicTable [nzData]="filteredDataSet">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Phone Number</th>
+      <th>Address</th>
+      <th>Cnic</th>
+      <th>License Number</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of basicTable.data">
+      <td>{{ data.CustomerName }}</td>
+      <td>{{ data.PhoneNumber }}</td>
+      <td>{{ data.Address }}</td>
+      <td>{{ data.Cnic }}</td>
+      <td>{{ data.LicenseNumber }}</td>
+      <td>
+        <span (click)="editCustomer(data)" nz-icon nzType="edit" style="font-size: 16px; margin-right: 0px;" nzTheme="twotone"></span>
+        <nz-divider nzType="vertical"></nz-divider>
+        <span nz-icon nzType="delete" style="font-size: 16px; margin-right: 0px;" nzTheme="twotone"></span>
+      </td>
+    </tr>
+  </tbody>
+</nz-table>
