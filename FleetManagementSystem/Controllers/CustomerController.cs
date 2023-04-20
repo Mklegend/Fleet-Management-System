@@ -23,7 +23,7 @@ namespace FleetManagementSystem.Controllers
 
         [HttpPost]
 
-        public bool Post([FromBody] Customer customer)
+        public bool Post([FromForm] Customer customer)
         {
             return customerManager.UpdateCustomer(customer);
         }

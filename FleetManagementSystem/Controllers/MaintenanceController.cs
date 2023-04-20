@@ -23,7 +23,7 @@ namespace FleetManagementSystem.Controllers
 
         [HttpPost]
 
-        public bool Post([FromBody] Maintenance maintenance)
+        public bool Post([FromForm] Maintenance maintenance)
         {
             return maintenanceManager.UpdateMaintenance(maintenance);
         }

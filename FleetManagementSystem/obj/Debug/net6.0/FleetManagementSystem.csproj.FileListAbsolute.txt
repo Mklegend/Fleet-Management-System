@@ -92,3 +92,9 @@ C:\Users\qures\source\repos\FleetManagementSystem\FleetManagementSystem\obj\Debu
 C:\Users\qures\source\repos\FleetManagementSystem\FleetManagementSystem\obj\Debug\net6.0\FleetManagementSystem.pdb
 C:\Users\qures\source\repos\FleetManagementSystem\FleetManagementSystem\obj\Debug\net6.0\FleetManagementSystem.genruntimeconfig.cache
 C:\Users\qures\source\repos\FleetManagementSystem\FleetManagementSystem\obj\Debug\net6.0\ref\FleetManagementSystem.dll
+C:\Users\qures\source\repos\FleetManagementSystem\FleetManagementSystem\bin\Debug\net6.0\System.Web.Cors.dll
+C:\Users\qures\source\repos\FleetManagementSystem\FleetManagementSystem\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\Users\qures\source\repos\FleetManagementSystem\FleetManagementSystem\bin\Debug\net6.0\System.Web.Http.dll
+C:\Users\qures\source\repos\FleetManagementSystem\FleetManagementSystem\bin\Debug\net6.0\System.Web.Http.Cors.dll
+C:\Users\qures\source\repos\FleetManagementSystem\FleetManagementSystem\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\qures\source\repos\FleetManagementSystem\FleetManagementSystem\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

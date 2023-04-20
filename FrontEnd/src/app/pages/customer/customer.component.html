@@ -16,7 +16,7 @@
     Add Customer
   </button>
 </div>
-<nz-table #basicTable [nzData]="filteredDataSet">
+<nz-table nzShowPagination #basicTable [nzData]="filteredDataSet">
   <thead>
     <tr>
       <th>Name</th>
@@ -29,15 +29,15 @@
   </thead>
   <tbody>
     <tr *ngFor="let data of basicTable.data">
-      <td>{{ data.CustomerName }}</td>
-      <td>{{ data.PhoneNumber }}</td>
-      <td>{{ data.Address }}</td>
-      <td>{{ data.Cnic }}</td>
-      <td>{{ data.LicenseNumber }}</td>
+      <td>{{ data.customerName }}</td>
+      <td>{{ data.phoneNumber }}</td>
+      <td>{{ data.address }}</td>
+      <td>{{ data.cnic }}</td>
+      <td>{{ data.licenseNumber }}</td>
       <td>
         <span (click)="editCustomer(data)" nz-icon nzType="edit" style="font-size: 16px; margin-right: 0px;" nzTheme="twotone"></span>
         <nz-divider nzType="vertical"></nz-divider>
-        <span nz-icon nzType="delete" style="font-size: 16px; margin-right: 0px;" nzTheme="twotone"></span>
+        <span (click)="deleteCustomer(data.customerId)" nz-icon nzType="delete" style="font-size: 16px; margin-right: 0px;" nzTheme="twotone"></span>
       </td>
     </tr>
   </tbody>

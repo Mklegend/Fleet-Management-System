@@ -23,7 +23,7 @@ namespace FleetManagementSystem.Controllers
 
         [HttpPost]
 
-        public bool Post([FromBody] Inventory inventory)
+        public bool Post([FromForm] Inventory inventory)
         {
             return inventoryManager.UpdateInventory(inventory);
         }

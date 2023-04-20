@@ -22,7 +22,7 @@ namespace FleetManagementSystem.Controllers
 
         [HttpPost]
 
-        public bool Post([FromBody] Booking booking) {
+        public bool Post([FromForm] Booking booking) {
             return bookingManager.UpdateBooking(booking);
         }
 
