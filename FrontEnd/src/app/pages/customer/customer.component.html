@@ -16,7 +16,7 @@
     Add Customer
   </button>
 </div>
-<nz-table nzShowPagination #basicTable [nzData]="filteredDataSet">
+<nz-table [nzShowPagination]="false" #basicTable [nzData]="filteredDataSet">
   <thead>
     <tr>
       <th>Name</th>
@@ -41,4 +41,7 @@
       </td>
     </tr>
   </tbody>
+  <tfoot>
+    <nz-pagination [nzPageIndex]="1" [nzTotal]="totalItems" [nzPageSize]="5" (nzPageIndexChange)="pageIndexChanged($event)"></nz-pagination>
+  </tfoot>
 </nz-table>

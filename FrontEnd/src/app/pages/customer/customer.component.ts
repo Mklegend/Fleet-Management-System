@@ -13,8 +13,9 @@ import { CustomerApiService } from 'src/app/services/customer-api.service';
 })
 export class CustomerComponent {
   dataSet: Customer[];
-  listOfCurrentPageData: readonly Customer[] = [];
   filteredDataSet: Customer[];
+  pageIndex: number = 1;
+  totalItems: number = 10;
   search: FormControl;
   constructor(
     private notification: NzNotificationService,
@@ -23,11 +24,15 @@ export class CustomerComponent {
   ) {
     this.search = new FormControl('');
     this.search.valueChanges.subscribe(() => {
-      this.filteredDataSet = this.dataSet.filter((customer) => {
-        return customer.customerName
-          .toLowerCase()
-          .includes(this.search.value.toLowerCase());
-      });
+      const startIndex = (this.pageIndex - 1) * 5;
+      const endIndex = startIndex + 5;
+      this.filteredDataSet = this.dataSet
+        .slice(startIndex, endIndex)
+        .filter((customer) => {
+          return customer.customerName
+            .toLowerCase()
+            .includes(this.search.value.toLowerCase());
+        });
     });
 
     // this.dataSet = [
@@ -58,10 +63,18 @@ export class CustomerComponent {
     this.getCustomers();
   }
 
+  pageIndexChanged(pageIndex: number): void {
+    this.pageIndex = pageIndex;
+    const startIndex = (this.pageIndex - 1) * 5;
+    const endIndex = startIndex + 5;
+    this.filteredDataSet = this.dataSet.slice(startIndex, endIndex);
+  }
+
   getCustomers() {
     this.customerApi.getCustomers().subscribe((customers) => {
       this.dataSet = customers;
       this.filteredDataSet = customers;
+      this.totalItems = this.dataSet.length;
       console.log(customers);
     });
   }
@@ -82,7 +95,11 @@ export class CustomerComponent {
   deleteCustomer(id: string) {
     this.customerApi.deleteCustomer(id).subscribe((res) => {
       if (res == true) {
-        this.notification.create('success', 'Success', 'Bus Service has been Deleted !');
+        this.notification.create(
+          'success',
+          'Success',
+          'Bus Service has been Deleted !'
+        );
         console.log('Customer deleted Successfully !');
       }
       this.getCustomers();
