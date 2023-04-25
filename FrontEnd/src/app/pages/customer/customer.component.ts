@@ -15,6 +15,7 @@ export class CustomerComponent {
   dataSet: Customer[];
   filteredDataSet: Customer[];
   pageIndex: number = 1;
+  itemsPerPage:number = 7;
   totalItems: number = 10;
   search: FormControl;
   constructor(
@@ -24,8 +25,8 @@ export class CustomerComponent {
   ) {
     this.search = new FormControl('');
     this.search.valueChanges.subscribe(() => {
-      const startIndex = (this.pageIndex - 1) * 5;
-      const endIndex = startIndex + 5;
+      const startIndex = (this.pageIndex - 1) * this.itemsPerPage;
+      const endIndex = startIndex + this.itemsPerPage;
       this.filteredDataSet = this.dataSet
         .slice(startIndex, endIndex)
         .filter((customer) => {
@@ -65,14 +66,14 @@ export class CustomerComponent {
 
   pageIndexChanged(pageIndex: number): void {
     this.pageIndex = pageIndex;
-    const startIndex = (this.pageIndex - 1) * 5;
-    const endIndex = startIndex + 5;
+    const startIndex = (this.pageIndex - 1) * this.itemsPerPage;
+    const endIndex = startIndex + this.itemsPerPage;
     this.filteredDataSet = this.dataSet.slice(startIndex, endIndex);
   }
 
   getCustomers() {
-    const startIndex = (this.pageIndex - 1) * 5;
-    const endIndex = startIndex + 5;
+    const startIndex = (this.pageIndex - 1) * this.itemsPerPage;
+    const endIndex = startIndex + this.itemsPerPage;
     this.customerApi.getCustomers().subscribe((customers) => {
       this.dataSet = customers;
       this.filteredDataSet = this.dataSet.slice(startIndex, endIndex);
