@@ -71,9 +71,11 @@ export class CustomerComponent {
   }
 
   getCustomers() {
+    const startIndex = (this.pageIndex - 1) * 5;
+    const endIndex = startIndex + 5;
     this.customerApi.getCustomers().subscribe((customers) => {
       this.dataSet = customers;
-      this.filteredDataSet = customers;
+      this.filteredDataSet = this.dataSet.slice(startIndex, endIndex);
       this.totalItems = this.dataSet.length;
       console.log(customers);
     });
@@ -98,7 +100,7 @@ export class CustomerComponent {
         this.notification.create(
           'success',
           'Success',
-          'Bus Service has been Deleted !'
+          'Customer has been Deleted !'
         );
         console.log('Customer deleted Successfully !');
       }
