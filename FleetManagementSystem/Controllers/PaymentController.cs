@@ -23,7 +23,7 @@ namespace FleetManagementSystem.Controllers
 
         [HttpPost]
 
-        public bool Post([FromBody] Payment payment)
+        public bool Post([FromForm] Payment payment)
         {
             return paymentManager.UpdatePayment(payment);
         }

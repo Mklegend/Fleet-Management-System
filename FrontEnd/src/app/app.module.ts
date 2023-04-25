@@ -29,6 +29,8 @@ import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzDividerModule } from 'ng-zorro-antd/divider';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NzFormModule } from 'ng-zorro-antd/form';
+import { NzNotificationModule } from 'ng-zorro-antd/notification';
+import { NzPaginationModule } from 'ng-zorro-antd/pagination';
 
 registerLocaleData(en);
 
@@ -59,7 +61,9 @@ registerLocaleData(en);
     NzTableModule,
     NzDividerModule,
     ReactiveFormsModule,
-    NzFormModule
+    NzFormModule,
+    NzNotificationModule,
+    NzPaginationModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }, NzDrawerService],
   bootstrap: [AppComponent],

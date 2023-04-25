@@ -1,24 +1,24 @@
 export class Customer {
-  CustomerId: string;
-  CustomerName: string;
-  PhoneNumber: string;
-  Address: string;
-  Cnic: string;
-  LicenseNumber: string;
+  customerId: string;
+  customerName: string;
+  phoneNumber: string;
+  address: string;
+  cnic: string;
+  licenseNumber: string;
 
   constructor(
-    CustomerId: string,
-    CustomerName: string,
-    PhoneNumber: string,
-    Address: string,
-    Cnic: string,
-    LicenseNumber: string
+    customerId: string,
+    customerName: string,
+    phoneNumber: string,
+    address: string,
+    cnic: string,
+    licenseNumber: string
   ) {
-    this.CustomerId = CustomerId;
-    this.CustomerName = CustomerName;
-    this.PhoneNumber = PhoneNumber;
-    this.Address = Address;
-    this.Cnic = Cnic;
-    this.LicenseNumber = LicenseNumber;
+    this.customerId = customerId;
+    this.customerName = customerName;
+    this.phoneNumber = phoneNumber;
+    this.address = address;
+    this.cnic = cnic;
+    this.licenseNumber = licenseNumber;
   }
 }

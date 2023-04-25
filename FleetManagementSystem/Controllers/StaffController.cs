@@ -23,7 +23,7 @@ namespace FleetManagementSystem.Controllers
 
         [HttpPost]
 
-        public bool Post([FromBody] Staff staff)
+        public bool Post([FromForm] Staff staff)
         {
             return staffManager.UpdateStaff(staff);
         }

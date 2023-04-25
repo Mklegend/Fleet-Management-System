@@ -2,7 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using Data;
 using Business.Interface;
-using Business.Interface;
 using Business.Implementation;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -37,6 +36,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors(builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
 
 app.UseAuthorization();
 

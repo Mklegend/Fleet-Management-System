@@ -23,7 +23,7 @@ namespace FleetManagementSystem.Controllers
 
         [HttpPost]
 
-        public bool Post([FromBody] Vehicle vehicle)
+        public bool Post([FromForm] Vehicle vehicle)
         {
             return vehicleManager.UpdateVehicle(vehicle);
         }
